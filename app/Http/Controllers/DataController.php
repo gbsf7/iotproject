@@ -54,5 +54,9 @@ class DataController extends Controller
 
         return view('pasien.cobagrafik', compact('datasuhu'));
     }
+    public function test()
+    {
+        return view('test');
+    }
 
 }

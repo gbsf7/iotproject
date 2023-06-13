@@ -26,6 +26,8 @@ Route::get('/inputdata/{suhu}/{kelembaban}', 'App\Http\Controllers\DataControlle
 Route::get('/pasien/tampilgrafik', 'App\Http\Controllers\DataController@tampilgrafik');
 Route::get('/pasien/cobagrafik', 'App\Http\Controllers\DataController@cobagrafik');
 
+Route::get('/test', 'App\Http\Controllers\DataController@test');
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
